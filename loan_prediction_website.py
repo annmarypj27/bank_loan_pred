@@ -14,7 +14,7 @@ import streamlit as st
 
 
 #loaded model
-loaded_model=pickle.load(open('C:/Users/hp/Downloads/model_saved','rb'))
+loaded_model=pickle.load(open('model_saved','rb'))
 
 def loan_prediction(input_data):
  Gender, Married, Dependents, Education, Self_Employed = int(input_data[0]), int(input_data[1]), float(input_data[2]), int(input_data[3]), int(input_data[4])
